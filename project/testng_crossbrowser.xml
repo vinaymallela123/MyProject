@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="crossbrowsertest" parallel="tests">
+	<test name="chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="com.mystore.testcases.LoginPageTest" />
+		</classes>
+	</test>
+	<test name="firefox">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.mystore.testcases.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
